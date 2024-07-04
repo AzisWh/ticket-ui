@@ -22,18 +22,7 @@
         },
       };
     </script>
-    <style>
-      @media (min-width: 640px) {
-        .card-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-      @media (min-width: 768px) {
-        .card-grid {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -124,106 +113,129 @@
       </div>
 
       <!-- Card Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center">
         <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-black rounded-lg shadow border-solid">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+        <a href="ticketdetailpage.html">
+          <div class="card bg-white">
+            <div class="imgDisplay">
+              <div class="relative pb-[56.25%] bg-gray-200">
+                <img src="image/carousels1.svg" alt="Event" class="absolute h-full w-full object-cover" />
+              </div>
+              <div class="y-date-boxInfo bg-orange-500">
+                <div class="y-date-month text-white">Aug</div>
+                <div class="y-date-day text-white">02</div>
+              </div>
+            </div>
+            <div class="y-card-title">
+              <p class="boxTitle">Nama Event - Kota Semarang</p>
+              <p class="boxAddress">Sam Poo Kong | Semarang</p>
+              <hr class="y-separator" />
+              <p class="boxInfo">Start From <span class="boxPrice">Rp&nbsp;109.000</span></p>
             </div>
           </div>
         </a>
         <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+        <a href="ticketdetailpage.html">
+          <div class="card bg-white">
+            <div class="imgDisplay">
+              <div class="relative pb-[56.25%] bg-gray-200">
+                <img src="image/carousels1.svg" alt="Event" class="absolute h-full w-full object-cover" />
+              </div>
+              <div class="y-date-boxInfo bg-orange-500">
+                <div class="y-date-month text-white">Aug</div>
+                <div class="y-date-day text-white">02</div>
+              </div>
+            </div>
+            <div class="y-card-title">
+              <p class="boxTitle">Nama Event - Kota Semarang</p>
+              <p class="boxAddress">Sam Poo Kong | Semarang</p>
+              <hr class="y-separator" />
+              <p class="boxInfo">Start From <span class="boxPrice">Rp&nbsp;109.000</span></p>
             </div>
           </div>
         </a>
         <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+        <a href="ticketdetailpage.html">
+          <div class="card bg-white">
+            <div class="imgDisplay">
+              <div class="relative pb-[56.25%] bg-gray-200">
+                <img src="image/carousels1.svg" alt="Event" class="absolute h-full w-full object-cover" />
+              </div>
+              <div class="y-date-boxInfo bg-orange-500">
+                <div class="y-date-month text-white">Aug</div>
+                <div class="y-date-day text-white">02</div>
+              </div>
+            </div>
+            <div class="y-card-title">
+              <p class="boxTitle">Nama Event - Kota Semarang</p>
+              <p class="boxAddress">Sam Poo Kong | Semarang</p>
+              <hr class="y-separator" />
+              <p class="boxInfo">Start From <span class="boxPrice">Rp&nbsp;109.000</span></p>
             </div>
           </div>
         </a>
         <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+        <a href="ticketdetailpage.html">
+          <div class="card bg-white">
+            <div class="imgDisplay">
+              <div class="relative pb-[56.25%] bg-gray-200">
+                <img src="image/carousels1.svg" alt="Event" class="absolute h-full w-full object-cover" />
+              </div>
+              <div class="y-date-boxInfo bg-orange-500">
+                <div class="y-date-month text-white">Aug</div>
+                <div class="y-date-day text-white">02</div>
+              </div>
+            </div>
+            <div class="y-card-title">
+              <p class="boxTitle">Nama Event - Kota Semarang</p>
+              <p class="boxAddress">Sam Poo Kong | Semarang</p>
+              <hr class="y-separator" />
+              <p class="boxInfo">Start From <span class="boxPrice">Rp&nbsp;109.000</span></p>
             </div>
           </div>
         </a>
         <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+        <a href="ticketdetailpage.html">
+          <div class="card bg-white">
+            <div class="imgDisplay">
+              <div class="relative pb-[56.25%] bg-gray-200">
+                <img src="image/carousels1.svg" alt="Event" class="absolute h-full w-full object-cover" />
+              </div>
+              <div class="y-date-boxInfo bg-orange-500">
+                <div class="y-date-month text-white">Aug</div>
+                <div class="y-date-day text-white">02</div>
+              </div>
+            </div>
+            <div class="y-card-title">
+              <p class="boxTitle">Nama Event - Kota Semarang</p>
+              <p class="boxAddress">Sam Poo Kong | Semarang</p>
+              <hr class="y-separator" />
+              <p class="boxInfo">Start From <span class="boxPrice">Rp&nbsp;109.000</span></p>
             </div>
           </div>
         </a>
         <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+        <a href="ticketdetailpage.html">
+          <div class="card bg-white">
+            <div class="imgDisplay">
+              <div class="relative pb-[56.25%] bg-gray-200">
+                <img src="image/carousels1.svg" alt="Event" class="absolute h-full w-full object-cover" />
+              </div>
+              <div class="y-date-boxInfo bg-orange-500">
+                <div class="y-date-month text-white">Aug</div>
+                <div class="y-date-day text-white">02</div>
+              </div>
             </div>
-          </div>
-        </a>
-        <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
-            </div>
-          </div>
-        </a>
-        <!-- card -->
-        <a href="ticketdetailpage.html" class="max-w-lg bg-white border-2 border-solid border-black rounded-lg shadow">
-          <img class="rounded-t-lg" src="image/carousels1.svg" alt="Image 1" />
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nama Event - Kota Semarang</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sam Poo Kong | Semarang</p>
-            <div class="flex justify-between px-0 md:px-6 mb-4">
-              <p class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300">Agustus - 8</p>
-              <p class="text-2xl font-bold">Rp.200.000</p>
+            <div class="y-card-title">
+              <p class="boxTitle">Nama Event - Kota Semarang</p>
+              <p class="boxAddress">Sam Poo Kong | Semarang</p>
+              <hr class="y-separator" />
+              <p class="boxInfo">Start From <span class="boxPrice">Rp&nbsp;109.000</span></p>
             </div>
           </div>
         </a>
       </div>
     </div>
-
     <!-- end card -->
 
     <!-- footer -->
