@@ -10,11 +10,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
   </head>
-  <body class="bg-[#454545] flex items-center justify-center min-h-screen">
-    <div class="grid grid-cols-1">
+  <body class="bg-[#454545] flex justify-center items-center">
+    <div class="grid grid-cols-1 py-16">
       <div class="bg-white p-6 shadow-lg text-center">
         <h1 class="text-2xl font-bold mb-4">Halaman Panitia</h1>
-        <div id="qr-reader" class="qr-reader-custom w-[500px]"></div>
+        <div id="qr-reader" class="qr-reader-custom w-[300px] md:w-[500px]"></div>
         <p id="qr-result" class="mt-4 text-lg font-medium text-gray-700"></p>
       </div>
       <form class="bg-white">
@@ -41,36 +41,6 @@
     </div>
 
     <script>
-      //   function onScanSuccess(decodedText, decodedResult) {
-      //     // Handle the decoded result here.
-      //     console.log(`Code matched = ${decodedText}`, decodedResult);
-      //     document.getElementById("qr-result").innerText = `QR Code: ${decodedText}`;
-      //     // Optionally, you can stop the scanner once a QR code is scanned.
-      //     html5QrCode.stop();
-      //   }
-
-      //   function onScanFailure(error) {
-      //     // Handle scan failure, usually better to ignore and keep scanning.
-      //     console.warn(`Code scan error = ${error}`);
-      //   }
-
-      //   let html5QrCode = new Html5Qrcode("qr-reader");
-
-      //   // Start scanning
-      //   html5QrCode
-      //     .start(
-      //       { facingMode: "environment" }, // Default camera or { facingMode: "environment" }
-      //       {
-      //         fps: 10, // Scans per second
-      //         qrbox: { width: 250, height: 250 }, // QR scanning box size
-      //       },
-      //       onScanSuccess,
-      //       onScanFailure
-      //     )
-      //     .catch((err) => {
-      //       // Start failed, handle it.
-      //       console.error(`Unable to start scanning, error: ${err}`);
-      //     });
       function domReady(fn) {
         if (document.readyState === "complete" || document.readyState === "interactive") {
           setTimeout(fn, 1);
