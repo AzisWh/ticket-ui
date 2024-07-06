@@ -10,33 +10,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
   </head>
-  <body class="bg-[#454545] flex justify-center items-center">
+  <body class="bg-[#454545] flex justify-center items-center min-h-screen">
     <div class="grid grid-cols-1 py-16">
-      <div class="bg-white p-6 shadow-lg text-center">
+      <div class="bg-white p-6 shadow-lg text-center relative max-w-md w-full md:max-w-2xl">
         <h1 class="text-2xl font-bold mb-4">Halaman Panitia</h1>
-        <div id="qr-reader" class="qr-reader-custom w-[300px] md:w-[500px]"></div>
+        <form action="#" method="POST">
+          <button class="absolute top-0 right-0 m-4 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium" type="submit">Logout</button>
+        </form>
+        <div id="qr-reader" class="qr-reader-custom w-full h-64 md:w-[500px]"></div>
         <p id="qr-result" class="mt-4 text-lg font-medium text-gray-700"></p>
       </div>
-      <form class="bg-white">
+      <form class="bg-white p-6 mt-6 text-center max-w-md w-full md:max-w-2xl" id="manualForm">
         <div class="grid gap-6 mt-10 md:mt-0 mb-6 md:grid-cols-1">
           <div>
-            <label for="first_name" class="block mb-2 text-center text-sm font-medium text-gray-900">QR id</label>
-            <input
-              type="text"
-              id="qr-id"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="John"
-              required
-            />
+            <label for="qr-id" class="block mb-2 text-center text-sm font-medium text-gray-900">Input manual QR id</label>
+            <input type="text" id="qr-id" name="qr_id" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Unique code tiket" required />
           </div>
+          <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
         </div>
-
-        <button
-          type="submit"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Submit
-        </button>
       </form>
     </div>
 
