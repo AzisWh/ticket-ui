@@ -10,6 +10,8 @@
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
       tailwind.config = {
@@ -247,6 +249,17 @@
             <a href="#" class="flex items-center">
               <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-white">Ticketify</span>
             </a>
+            <!-- Google Maps Embed -->
+            <div class="mt-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0326229038837!2d110.43319167504461!3d-7.0054414929958835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4f0cabd003%3A0x7b3037615eccb7e2!2sPT.%20CIPTA%20KHARISMA%20MULTI%20RAYA!5e0!3m2!1sid!2sid!4v1720447905726!5m2!1sid!2sid"
+                class="w-full h-full"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -281,7 +294,13 @@
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Ticketifyid@gmail.com</a>
+                  <a href="mailto:Ticketifyid@gmail.com" class="hover:underline"><i class="fas fa-envelope mr-2"></i>Ticketifyid@gmail.com</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://wa.me/+6282327035119" target="_blank" class="hover:underline"><i class="fab fa-whatsapp mr-2"></i>WhatsApp</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ciptakharisma.prod/" target="_blank" class="hover:underline"><i class="fab fa-instagram mr-2"></i>Instagram</a>
                 </li>
               </ul>
             </div>
